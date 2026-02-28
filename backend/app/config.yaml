@@ -1,0 +1,8 @@
+search:
+  # Number of results to fetch from each provider
+  results_per_provider: 20
+  # Maximum number of results to include in the LLM context
+  max_results_context: 8
+  # Search request timeout in seconds
+  timeout: 10
+

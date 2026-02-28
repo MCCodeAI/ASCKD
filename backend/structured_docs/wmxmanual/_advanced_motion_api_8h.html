@@ -1,0 +1,231 @@
+<p>WMX3 User Manual: AdvancedMotionApi.h File Reference</p>
+<p>| Logo | WMX3 User Manual  3.6u1 |
+| --- | --- |</p>
+<p><a href="#nested-classes">Classes</a> |
+<a href="#var-members">Variables</a>
+AdvancedMotionApi.h File Reference</p>
+<p>| Classes | |
+| --- | --- |
+| class | <a href="classwmx3_api_1_1_advanced_motion_error_code.html">AdvancedMotionErrorCode</a> |
+|  | This enumerator class enumerates the WMX3 advanced motion library error codes. <a href="classwmx3_api_1_1_advanced_motion_error_code.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync.html">AdvSync</a> |
+|  | <strong>This class contains advanced sync functions.</strong>  <a href="classwmx3_api_1_1_adv_sync.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_type.html">AdvSync::ECAMType</a> |
+|  | This enumerator class enumerates the types of E-CAM, which determine certain characteristics of E-CAM. Also see <a href="_w_m_x_d_o_c__f_u_n_c__e_c_m.html">E-CAM</a>. <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_type.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_source_type.html">AdvSync::ECAMSourceType</a> |
+|  | This enumerator class enumerates the sources of the E-CAM master input. <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_source_type.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_source_options.html">AdvSync::ECAMSourceOptions</a> |
+|  | This class contains E-CAM source options. This determines the source of the master input that is used to calculate the slave command position from the E-CAM table. <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_source_options.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_clutch_type.html">AdvSync::ECAMClutchType</a> |
+|  | This enumerator class enumerates the E-CAM clutch types. <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_clutch_type.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_clutch_options.html">AdvSync::ECAMClutchOptions</a> |
+|  | This class contains E-CAM clutch options. The E-CAM clutch determines how the slave axis synchronizes with the master axis when E-CAM is started. <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_clutch_options.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_options.html">AdvSync::ECAMOptions</a> |
+|  | This class contains E-CAM options, including the E-CAM clutch options. <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_options.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_data.html">AdvSync::ECAMData</a> |
+|  | This class contains all settings for E-CAM control, including E-CAM table data. <a href="classwmx3_api_1_1_adv_sync_1_1_e_c_a_m_data.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_dancer_control_options.html">AdvSync::DancerControlOptions</a> |
+|  | This class contains options for dancer control. <a href="classwmx3_api_1_1_adv_sync_1_1_dancer_control_options.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_sync_1_1_dancer_control_status.html">AdvSync::DancerControlStatus</a> |
+|  | This class contains the status for dancer control. <a href="classwmx3_api_1_1_adv_sync_1_1_dancer_control_status.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_velocity.html">AdvVelocity</a> |
+|  | <strong>This class contains advanced velocity command functions.</strong>  <a href="classwmx3_api_1_1_adv_velocity.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion.html">AdvMotion</a> |
+|  | <strong>This class contains advanced position command functions.</strong>  <a href="classwmx3_api_1_1_adv_motion.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_spline_point.html">AdvMotion::SplinePoint</a> |
+|  | This class contains data for a spline point. <a href="classwmx3_api_1_1_adv_motion_1_1_spline_point.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_point_time_spline_command.html">AdvMotion::PointTimeSplineCommand</a> |
+|  | This class contains data for a spline command in which the time at each point is specified. <a href="classwmx3_api_1_1_adv_motion_1_1_point_time_spline_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_total_time_spline_command.html">AdvMotion::TotalTimeSplineCommand</a> |
+|  | This class contains data for a spline command in which the total time is specified. <a href="classwmx3_api_1_1_adv_motion_1_1_total_time_spline_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_profile_spline_command.html">AdvMotion::ProfileSplineCommand</a> |
+|  | This class contains data for a spline command in which the spline is traversed using a motion profile. <a href="classwmx3_api_1_1_adv_motion_1_1_profile_spline_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_vel_acc_limited_spline_command.html">AdvMotion::VelAccLimitedSplineCommand</a> |
+|  | This class contains data for a spline command in which the spline is traversed while staying within the specified velocity and acceleration limits for each axis. <a href="classwmx3_api_1_1_adv_motion_1_1_vel_acc_limited_spline_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_segment_type.html">AdvMotion::PathIntplSegmentType</a> |
+|  | This enumerator class enumerates the segment types of motion segments in a path interpolation. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_segment_type.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_output_type.html">AdvMotion::PathIntplOutputType</a> |
+|  | This enumerator class enumerates the output types of outputs in a path interpolation. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_output_type.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_output_source.html">AdvMotion::PathIntplOutputSource</a> |
+|  | This enumerator class enumerates the output sources of outputs in a path interpolation. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_output_source.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_coordinate_type.html">AdvMotion::PathIntplCoordinateType</a> |
+|  | This enumerator class enumerates the coordinate types of path interpolations. The coordinate type determines how the coordinates are specified when defining positions in a path interpolation. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_coordinate_type.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_command.html">AdvMotion::PathIntplCommand</a> |
+|  | This class contains data for a path interpolation motion command. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_additional_command.html">AdvMotion::PathIntplAdditionalCommand</a> |
+|  | This class contains data for additional interpolation segment data for path interpolation. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_additional_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl3_d_command.html">AdvMotion::PathIntpl3DCommand</a> |
+|  | This class contains data for a 3D path interpolation motion command. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl3_d_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl3_d_additional_command.html">AdvMotion::PathIntpl3DAdditionalCommand</a> |
+|  | This class contains data for additional interpolation segment data for 3D path interpolation. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl3_d_additional_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_configuration.html">AdvMotion::PathIntplWithRotationConfiguration</a> |
+|  | This class contains the configuration data for a path interpolation with rotation channel. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_configuration.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_command_point.html">AdvMotion::PathIntplWithRotationCommandPoint</a> |
+|  | This class contains data for one point in the path interpolation with rotation motion command. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_command_point.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_command.html">AdvMotion::PathIntplWithRotationCommand</a> |
+|  | This class contains data for a path interpolation with rotation command. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_state.html">AdvMotion::PathIntplWithRotationState</a> |
+|  | This enumerator class enumerates the path interpolation with rotation states. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_state.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_status.html">AdvMotion::PathIntplWithRotationStatus</a> |
+|  | This class contains status data for a path interpolation with rotation channel. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_with_rotation_status.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html">AdvMotion::PathIntplLookaheadSegmentType</a> |
+|  | This enumerator class enumerates the segment types of motion segments in a path interpolation with look ahead. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_coordinate_type.html">AdvMotion::PathIntplLookaheadCoordinateType</a> |
+|  | This enumerator class enumerates the coordinate types of path interpolations with look ahead. The coordinate type determines how the coordinates are specified when defining positions in a path interpolation with look ahead. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_coordinate_type.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_configuration.html">AdvMotion::PathIntplLookaheadConfiguration</a> |
+|  | This class contains the configuration data for a path interpolation with look ahead channel. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_configuration.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point.html">AdvMotion::PathIntplLookaheadCommandPoint</a> |
+|  | This class contains data for one point in the path interpolation with look ahead motion command. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point.html#details">More...</a> |
+|  | |
+| union | <a href="unionwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data.html">AdvMotion::PathIntplLookaheadCommandPoint::Data</a> |
+|  | This union defines the structs containing parameters for each segment type. The parameters should be specified in the struct corresponding to the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html">PathIntplLookaheadSegmentType</a> of this point. <a href="unionwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_linear.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::Linear</a> |
+|  | This structure contains the arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937ba1a1f3bc55fefa098d9034cc46e2e7a2b">Linear</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_linear.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_center_and_length_circular.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::CenterAndLengthCircular</a> |
+|  | This structure contains the arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937ba16180b9d3a2a400d3df7e581c20359da">CenterAndLengthCircular</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_center_and_length_circular.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_center_and_end_circular.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::CenterAndEndCircular</a> |
+|  | This structure contains the arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937ba9aaf6420f6cb02ebbe90eb1fe83e89d3">CenterAndEndCircular</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_center_and_end_circular.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_through_and_end_circular.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::ThroughAndEndCircular</a> |
+|  | This structure contains the arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937ba02eb6d17c799c9e77ea03efc72b9368a">ThroughAndEndCircular</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_through_and_end_circular.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_length_and_end_circular.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::LengthAndEndCircular</a> |
+|  | This structure contains the arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937ba7de6ef40349723f9bb3cdefd6780994d">LengthAndEndCircular</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_length_and_end_circular.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_radius_and_end_circular.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::RadiusAndEndCircular</a> |
+|  | This structure contains the arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937ba72e8c35f9872c4db6534b1477f3e6889">RadiusAndEndCircular</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_radius_and_end_circular.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_through_and_end3_d_circular.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::ThroughAndEnd3DCircular</a> |
+|  | This structure contains the arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937ba02249175e1f8e5153675bab1bedc1fd3">ThroughAndEnd3DCircular</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_through_and_end3_d_circular.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_sleep.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::Sleep</a> |
+|  | This structure contains arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937ba5b382c5c9788ae9f606d475a6709e721">Sleep</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_sleep.html#details">More...</a> |
+|  | |
+| struct | <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_set_output_bit.html">AdvMotion::PathIntplLookaheadCommandPoint::Data::SetOutputBit</a> |
+|  | This structure contains arguments for the <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_segment_type.html#adf1f3edb9115acb0a1e04209b7a9937bad2bfad21dc65d248f3ef6741a44c249e">SetOutputBit</a> segment type. <a href="structwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command_point_1_1_data_1_1_set_output_bit.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command.html">AdvMotion::PathIntplLookaheadCommand</a> |
+|  | This class contains data for path interpolation with look ahead. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_state.html">AdvMotion::PathIntplLookaheadState</a> |
+|  | This enumerator class enumerates the states of a path interpolation with look ahead channel. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_state.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_status.html">AdvMotion::PathIntplLookaheadStatus</a> |
+|  | This class contains status data for a path interpolation with look ahead channel. <a href="classwmx3_api_1_1_adv_motion_1_1_path_intpl_lookahead_status.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_pos_command.html">AdvMotion::PosCommand</a> |
+|  | This class contains data for a position command. <a href="classwmx3_api_1_1_adv_motion_1_1_pos_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_coordinated_pos_command.html">AdvMotion::CoordinatedPosCommand</a> |
+|  | This class contains data for a coordinated position command. <a href="classwmx3_api_1_1_adv_motion_1_1_coordinated_pos_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_coordinated_jerk_ratio_pos_command.html">AdvMotion::CoordinatedJerkRatioPosCommand</a> |
+|  | This class contains data for a coordinated position command with two or more axes. <a href="classwmx3_api_1_1_adv_motion_1_1_coordinated_jerk_ratio_pos_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_two_link_linear_command.html">AdvMotion::TwoLinkLinearCommand</a> |
+|  | This class contains data for a two link motion command for a linear axis. <a href="classwmx3_api_1_1_adv_motion_1_1_two_link_linear_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_two_link_rotary_command.html">AdvMotion::TwoLinkRotaryCommand</a> |
+|  | This class contains data for a two link motion command for a rotary axis. <a href="classwmx3_api_1_1_adv_motion_1_1_two_link_rotary_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_simulate_path_intpl_command.html">AdvMotion::SimulatePathIntplCommand</a> |
+|  | This class contains data for simulating a path interpolation motion command. <a href="classwmx3_api_1_1_adv_motion_1_1_simulate_path_intpl_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_adv_motion_1_1_simulate_path_intpl3_d_command.html">AdvMotion::SimulatePathIntpl3DCommand</a> |
+|  | This class contains data for simulating a 3D path interpolation motion. <a href="classwmx3_api_1_1_adv_motion_1_1_simulate_path_intpl3_d_command.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1_advanced_motion.html">AdvancedMotion</a> |
+|  | <strong>This class contains advanced motion functions.</strong>  <a href="classwmx3_api_1_1_advanced_motion.html#details">More...</a> |
+|  | |</p>
+<p>| Variables | |
+| --- | --- |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#ae3e30abaa22640e7612960efe5cde375">maxSplineDimensions</a> = 8 |
+|  | The maximum number of axes in a spline interpolation (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#a1f910c3f78533d599440ca7845c73e90">maxSplineChannel</a> = 128 |
+|  | The maximum number of spline execution channels (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#a389a4b58f947ab03d2f1db4049f4d936">maxPathInterpolateAppendPoints</a> = 512 |
+|  | The maximum number of path interpolation points that may be appended to a path interpolation sequence with a single command (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#a59dd7d5514e5674a27d2bc1f76fbe8ab">maxPathInterpolateOutputs</a> = 512 |
+|  | The maximum number of outputs that may be defined in a path interpolation sequence (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#ad74a5ea4e28a4f599400730ac1abeb1b">maxPathInterpolateDimensions</a> = 2 |
+|  | The maximum number of axes that may be controlled by a path interpolation sequence (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#a169a4164d55d1fc9c20f9ffeccc68b4f">max3DPathInterpolateDimensions</a> = 3 |
+|  | The maximum number of axes that may be controlled by a 3D path interpolation sequence (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#aa727130913c6f319d0304097cbe00901">maxPathIntplWithRotationAppendPoints</a> = 1024 |
+|  | The maximum number of path interpolation points that may be appended to a path interpolation with rotation sequence by a single function call (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#adf3ebb02eb796da51f9122306631c256">maxPathIntplWithRotationChannel</a> = 128 |
+|  | The maximum number of path interpolation with rotation channels (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#a93cc6cf1d9086de6e42fef34d5b6ffa9">maxPathIntplLookaheadDimensions</a> = 6 |
+|  | The maximum number of axes that may be controlled by a path interpolation with look ahead sequence (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#aa0543587dee8546fd156367211c3e348">maxPathIntplLookaheadAppendPoints</a> = 1500 |
+|  | The maximum number of path interpolation points that may be appended to a path interpolation with look ahead sequence by a single function call (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#a85a5145a1f8152fc0f6e7d13b0a424d7">maxPathIntplLookaheadChannel</a> = 128 |
+|  | The maximum number of path interpolation with look ahead channels (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#ab16ef367e6f3c1fe0ee66bfe3fb71c04">maxPathIntplLookaheadOutputPerSegment</a> = 128 |
+|  | The maximum number of outputs that may be defined per segment in a path interpolation with look ahead sequence (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#ad3c41ba0bc6c234dea1deec9995869a1">maxPathIntplLookaheadSmoothingCycles</a> = 2000 |
+|  | The maximum number of cycles of smoothing that can be applied to path interpolation with look ahead. |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#a96c7e2e4f9e2ac443c3f649931999f6a">maxPathIntplLookaheadAuxiliaryAxes</a> = 3 |
+|  | The maximum number of auxiliary axes per segment in a path interpolation with look ahead sequence. |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#af647e98b7f0e5c817ca41c5024004855">maxEcamPoints</a> = 4096 |
+|  | The maximum number of E-CAM points that may be defined per E-CAM channel (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |
+| static const int | <a href="namespacewmx3_api_1_1constants.html#aba10cd7caabccdaa2fd51a37686c8a29">maxEcamChannel</a> = 8 |
+|  | The maximum number of E-CAM channels (also see <a href="_w_m_x_d_o_c__c_o_n_s_t_a_n_t_s__a_d_v_a_n_c_e_d_m_o_t_i_o_n.html">Advanced Motion Constants</a>). |
+|  | |</p>
+<ul>
+<li><a href="dir_bdd9a5d540de89e9fe90efdfc6973a4f.html">common</a></li>
+<li><a href="dir_11fbc4217d50ab21044e5ad6614aede5.html">include</a></li>
+<li><a href="_advanced_motion_api_8h.html">AdvancedMotionApi.h</a></li>
+</ul>

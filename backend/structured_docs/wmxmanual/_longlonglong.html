@@ -1,0 +1,49 @@
+<p>✅ 内容分块功能已成功实施并验证完成！</p>
+<p>主要成果：</p>
+<p>所有sdbody内容（body_s, h1, h2）现在会在超过8,192 tokens时自动分块
+使用段落级分割策略保持语义完整性
+正确建立了composes和follows关系
+所有chunk都在token限制内（测试最大值：7,813 tokens）
+验证结果：</p>
+<p>测试文件成功分成16个chunk
+第1个chunk建立infile引用
+后续chunks建立composes（指向第1个chunk）和follows（指向前一个chunk）关系
+请查看walkthrough了解详细实现和测试结果。</p>
+<p>WMX3 User Manual: SimuApi.h File Reference</p>
+<p>| Logo | WMX3 User Manual  3.6u1 |
+| --- | --- |</p>
+<p><a href="#nested-classes">Classes</a> |
+<a href="#define-members">Macros</a>
+SimuApi.h File Reference</p>
+<p>| Classes | |
+| --- | --- |
+| class | <a href="classwmx3_api_1_1simu_api_1_1_simu_axis_state.html">SimuAxisState</a> |
+|  | This enumerator class enumerates the simulator axis states. <a href="classwmx3_api_1_1simu_api_1_1_simu_axis_state.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1simu_api_1_1_simu_error_code.html">SimuErrorCode</a> |
+|  | This enumerator class enumerates the Simu library error codes. <a href="classwmx3_api_1_1simu_api_1_1_simu_error_code.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1simu_api_1_1_simu_axis_signal.html">SimuAxisSignal</a> |
+|  | This class describes the simulator axis signal. <a href="classwmx3_api_1_1simu_api_1_1_simu_axis_signal.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1simu_api_1_1_simu_axis_data.html">SimuAxisData</a> |
+|  | This class describes the simulator axis data. <a href="classwmx3_api_1_1simu_api_1_1_simu_axis_data.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1simu_api_1_1_simu_io_data.html">SimuIoData</a> |
+|  | This class describes the simulator IO data. <a href="classwmx3_api_1_1simu_api_1_1_simu_io_data.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1simu_api_1_1_simu_master_info.html">SimuMasterInfo</a> |
+|  | This class describes the simulator master information. <a href="classwmx3_api_1_1simu_api_1_1_simu_master_info.html#details">More...</a> |
+|  | |
+| class | <a href="classwmx3_api_1_1simu_api_1_1_simu.html">Simu</a> |
+|  | <strong>This class contains Simu API functions.</strong>  <a href="classwmx3_api_1_1simu_api_1_1_simu.html#details">More...</a> |
+|  | |</p>
+<p>| Macros | |
+| --- | --- |
+| #define | <strong>SIMUAPIFUNC</strong>   HRESULT |
+|  | |</p>
+<ul>
+<li><a href="dir_b95b1c29731b5660a7109d816f9c0663.html">simu</a></li>
+<li><a href="dir_23bd7f0f6b8cae3eed424feea7836638.html">include</a></li>
+<li><a href="_simu_api_8h.html">SimuApi.h</a></li>
+</ul>

@@ -1,0 +1,30 @@
+---
+services:
+  weaviate:
+    command:
+    - --host
+    - 0.0.0.0
+    - --port
+    - '8090'
+    - --scheme
+    - http
+    image: cr.weaviate.io/semitechnologies/weaviate:1.33.2
+    ports:
+    - 8090:8090
+    - 50051:50051
+    volumes:
+    - weaviate_data:/var/lib/weaviate
+    restart: on-failure:0
+    env_file:
+      - backend/.env  # Load environment variables from backend/.env file
+    environment:
+      QUERY_DEFAULTS_LIMIT: 25
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
+      PERSISTENCE_DATA_PATH: '/var/lib/weaviate/sdocs'
+      # Vectorization module: using text2vec-voyageai for Voyage AI embeddings(32k context)
+      ENABLE_MODULES: 'text2vec-voyageai'  # enable Voyage AI vectorizer
+      # Model name can be: voyage-3, voyage-3-lite, voyage-3.5, voyage-3.5-lite, etc.
+      VOYAGEAI_MODEL: 'voyage-3.5-lite'  # Voyage AI embedding model
+      CLUSTER_HOSTNAME: 'node1'
+volumes:
+  weaviate_data:
